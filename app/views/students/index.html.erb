@@ -1,0 +1,30 @@
+ <%= render partial: "shared/navbar"%>
+ <div class= "card mt-5 mb-5">
+    <div class = "card-body">
+    <h2 class="text-centre">Listing Students</h2>
+    </div>
+<div class="d-flex p-2">
+ <table class= "table table-boardered">
+    <thead>
+        <tr>
+            <th> Name </th>
+            <th> Email </th>
+            <th> Address </th>
+        </tr>
+    </thead>
+    </div>
+    <tbody>
+        <% @student.each do |student|%>
+        <tr>
+            <td><%=student.name%></td>
+            <td><%=student.email%></td>
+            <td><%=student.address%></td>
+        </tr>
+        <%end%>
+    </tbody>
+<table>
+
+</div>
+<%= link_to "New Student", "/students/new", class: "new-student-link" %>
+
+

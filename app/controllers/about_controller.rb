@@ -1,9 +1,16 @@
 class AboutController < ApplicationController
-    def index
+    def about_us
     
     end
-    def view
+    def contact_us
       
+    end
+
+    def term_and_condition
+    end
+
+    def privacy_policy
+
     end
 
 

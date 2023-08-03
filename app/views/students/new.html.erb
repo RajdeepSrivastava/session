@@ -1,0 +1,29 @@
+<%= render partial: "shared/navbar"%>
+
+<%= form_with model: @student do |form| %>
+    <%=form.label :first_name%>
+    <%=form.text_field :first_name%>
+
+    <%=form.label :last_name%>
+    <%=form.text_field :last_name%>
+
+    <%=form.label :email%>
+    <%=form.text_field :email%>
+
+    <%=form.label :city%>
+    <%=form.text_field :city%>
+
+    <%=form.label :state%>
+    <%=form.text_field :state%>
+
+    <%=form.label :country%>
+    <%=form.text_field :country%>
+
+    <%=form.label :pincode%>
+    <%=form.number_field :pincode%>
+
+    <%=form.submit "Submit"%>
+    
+    <%end%>
+
+
